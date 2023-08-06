@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rectangle</title>
+</head>
+<body>
+    <div id = "rectangle"></div>
+    <style>
+        #rectangle {
+            background: aqua;
+            border: 5px solid black;
+            padding: 100px 200px;
+        }
+    </style>
+   
+    <script>
+        var a = parseInt(prompt(`Please enter the width of the rectangle [positive number]: `));
+        var b = parseInt(prompt(`Please enter the length of the rectangle [positive number]: `));
+     
+        while (a <=0 || b <=0) {
+            
+            var a = parseInt(prompt(`Please enter the width of the rectangle [POSITIVE NUMBER!]: `));
+            var b = parseInt(prompt(`Please enter the length of the rectangle [POSITIVE NUMBER!]: `)); 
+        }
+        
+            const myElement = document.getElementById("rectangle"); 
+            myElement.style.width = a + "px";
+            myElement.style.length = b + "px";
+            
+
+    
+   
+           
+    
+    </script>
+
+
+    
+</body>
+</html>
